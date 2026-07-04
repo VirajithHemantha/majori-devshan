@@ -251,6 +251,106 @@ function WeddingEnvelope({ onOpen }: { onOpen: () => void }) {
     </motion.div>
   );
 }
+function WelcomeSection() {
+  return (
+    <section className="cv-auto py-24 md:py-32 bg-white relative overflow-hidden border-t border-theme-100/30">
+      <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
+      <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Welcome to Our Wedding</h2>
+          <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
+            Love knows no distance or borders. What began miles apart has led us to this beautiful day. Thank you for celebrating the beginning of our forever. Your love and blessings mean the world to us.
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function OurStorySection() {
+  return (
+    <section className="cv-auto py-24 md:py-32 bg-white relative overflow-hidden border-t border-theme-100/30">
+      <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
+      <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Our Story</h2>
+          <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
+            From Canada to the United States, distance brought us closer rather than apart. Two years of love, trust, and unforgettable memories led us here. Today, we begin our forever together.
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function ProposalSection() {
+  return (
+    <section className="cv-auto py-24 md:py-32 bg-[#f0eceb] relative overflow-hidden border-t border-theme-100/30">
+      <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
+      <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">The Proposal</h2>
+          <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
+            On December 24, 2024, beneath the lights of Central Park, New York City, Devshan asked Majori to spend forever with him. She said “Yes,” and our next chapter began. We can’t wait to celebrate with you on August 8, 2026.
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function EventTimeline() {
+  const events = [
+    { time: "11:00 AM", title: "Blessing Ceremony" },
+    { time: "12:00 PM", title: "Reception" },
+    { time: "04:00 PM", title: "Going Away" },
+  ];
+
+  return (
+    <section className="cv-auto py-24 bg-white relative overflow-hidden border-t border-theme-100/30">
+      <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
+      <div className="container mx-auto px-6 max-w-4xl relative z-10">
+        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
+          <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">Event Timeline</h2>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold">The flow of our special day</p>
+        </motion.div>
+
+        <div className="relative max-w-xl mx-auto">
+          {/* Vertical line */}
+          <div className="absolute left-[24px] md:left-1/2 md:-translate-x-1/2 top-4 bottom-4 w-px bg-gradient-to-b from-amber-200 via-theme-300 to-amber-200" />
+
+          <div className="space-y-12">
+            {events.map((event, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.2 }}
+                className="relative flex items-center md:justify-between w-full"
+              >
+                {/* Mobile Icon (Left) or Desktop Icon (Center) */}
+                <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 bg-[#f0eceb] rounded-full border-[3px] border-white shadow-[0_4px_15px_-3px_rgba(0,0,0,0.1)] flex items-center justify-center z-10">
+                  <div className="w-3 h-3 rounded-full bg-gradient-to-br from-amber-400 to-theme-500" />
+                </div>
+
+                {/* Content Box */}
+                <div className={`ml-16 md:ml-0 md:w-[calc(50%-3rem)] bg-white p-6 rounded-2xl shadow-sm border border-amber-100/60 hover:shadow-md transition-shadow relative group text-left ${index % 2 === 0 ? "md:mr-auto md:text-right" : "md:ml-auto md:text-left"}`}>
+                  <p className="font-cinzel text-xl text-theme-900 font-bold mb-1 tracking-wide">{event.time}</p>
+                  <p className="text-[11px] uppercase tracking-[0.2em] text-stone-500 font-bold">{event.title}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function RSVPForm() {
   const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
   const [name, setName] = useState("");
@@ -622,6 +722,8 @@ export default function WeddingInvitation() {
 
             </section>
 
+            <WelcomeSection />
+
             {/* Wedding Details Section */}
             <section className="cv-auto py-24 md:py-32 w-full flex flex-col items-center px-4 relative">
               <div className="section-floral-overlay absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
@@ -753,6 +855,8 @@ export default function WeddingInvitation() {
               </div>
             </section>
 
+            <OurStorySection />
+
             {/* Countdown Section */}
             <section className="cv-auto py-24 md:py-36 bg-[#f0eceb] relative border-y border-theme-100/30 flex flex-col items-center overflow-hidden">
               {/* Premium Background Elements */}
@@ -792,6 +896,8 @@ export default function WeddingInvitation() {
               </div>
             </section>
 
+            <ProposalSection />
+
             {/* Venue Location Section */}
             <section className="cv-auto py-24 md:py-36 bg-[#f0eceb] relative overflow-hidden">
               {/* Decorative Background */}
@@ -815,7 +921,7 @@ export default function WeddingInvitation() {
                         Earls Regency Kandy
                       </h2>
                       <p className="text-xs md:text-sm text-amber-600 font-bold uppercase tracking-[0.25em]">
-                        (Ballroom)
+                        (Regent Ballroom)
                       </p>
                     </div>
 
@@ -883,6 +989,7 @@ export default function WeddingInvitation() {
             </section>
 
 
+            <EventTimeline />
             <RSVPForm />
             <WishesForm />
 
@@ -917,15 +1024,23 @@ export default function WeddingInvitation() {
                         <span className="text-theme-700 mt-4 block tracking-[0.15em]">WE CAN'T WAIT TO CELEBRATE THIS SPECIAL DAY WITH YOU!</span>
                       </p>
 
-                      <motion.img
-                        initial={{ opacity: 0, y: 24, scale: 0.95 }}
-                        whileInView={{ opacity: 0.9, y: 0, scale: 1 }}
+                      <motion.div
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
-                        transition={{ duration: 0.9, ease: "easeOut" }}
-                        src={mandalaImage}
-                        alt=""
-                        className="relative z-10 mt-8 w-40 h-40 md:w-56 md:h-56 object-contain mix-blend-multiply drop-shadow-[0_12px_24px_rgba(245,158,11,0.25)]"
-                      />
+                        transition={{ duration: 1, delay: 0.2 }}
+                        className="relative z-10 mt-12 mb-8 w-full max-w-md mx-auto px-4"
+                      >
+                        <img 
+                          src="/WhatsApp Image 2026-07-04 at 03.20.35 (1).jpeg" 
+                          alt="Couple" 
+                          className="w-full h-auto object-cover rounded-[2rem] shadow-2xl border-[8px] border-white/60"
+                        />
+                      </motion.div>
+
+
+
+
                     </div>
                   </motion.div>
                 </div>
