@@ -489,7 +489,7 @@ export default function WeddingInvitationSinhala() {
   useEffect(() => {
     if (isOpened) {
       if (!audioRef.current) {
-        audioRef.current = new Audio("/bg_music.mp3");
+        audioRef.current = new Audio("/Christina Perri - A Thousand Years (PianoCello Cover).mp3");
         audioRef.current.loop = true;
       }
       audioRef.current.play().then(() => {
@@ -513,7 +513,7 @@ export default function WeddingInvitationSinhala() {
 
   const togglePlay = () => {
     if (!audioRef.current) {
-      audioRef.current = new Audio("/bg_music.mp3");
+      audioRef.current = new Audio("/Christina Perri - A Thousand Years (PianoCello Cover).mp3");
       audioRef.current.loop = true;
     }
     if (isPlaying) {
@@ -698,7 +698,7 @@ export default function WeddingInvitationSinhala() {
                     </div>
                     <div className="font-sinhala space-y-2">
                       <p className="text-lg md:text-base text-stone-700 tracking-[0.2em] md:tracking-[0.3em] font-bold">2026 අගෝස්තු 08</p>
-                      <p className="text-[11px] md:text-[9px] text-theme-600 tracking-[0.2em] uppercase font-bold">රත්නපුර, ශ්‍රී ලංකාව</p>
+                      <p className="text-[11px] md:text-[9px] text-theme-600 tracking-[0.2em] uppercase font-bold">මහනුවර, ශ්‍රී ලංකාව</p>
                     </div>
                   </motion.div>
                 </div>
@@ -763,8 +763,8 @@ export default function WeddingInvitationSinhala() {
                     <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
-                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">ආදරණීය පුතු</p>
-                        <p className="text-xs md:text-sm font-sinhala text-stone-600 tracking-wide leading-relaxed">ආර්.කේ. චානිකා සුදර්ශනී <br />සහ<br /> එම්.පී. රංජිත් මිණිපුර</p>
+                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">ආදරණීය දියණිය</p>
+                        <p className="text-xs md:text-sm font-sinhala text-stone-600 tracking-wide leading-relaxed">ලිලී රන්හලුගේ <br />සහ<br /> සුදත් රන්හලුගේ</p>
                       </div>
                       <h3 className="text-3xl md:text-5xl font-sinhala text-theme-800 text-gold-shiny group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">මජෝරි</h3>
                     </div>
@@ -797,8 +797,8 @@ export default function WeddingInvitationSinhala() {
                     <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
-                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">ආදරණීය දියණිය</p>
-                        <p className="text-xs md:text-sm font-sinhala text-stone-600 tracking-wide leading-relaxed">ඩබ්ලිව්.ඒ. තුෂාරා දිලිනි <br />සහ<br /> එස්.එම්. ජගත් තෙන්නකෝන්</p>
+                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">ආදරණීය පුතු</p>
+                        <p className="text-xs md:text-sm font-sinhala text-stone-600 tracking-wide leading-relaxed">චාමිකා ප්‍රනාන්දු <br />සහ<br /> මිල්රෝයි ජෝසප්</p>
                       </div>
                       <h3 className="text-3xl md:text-5xl font-sinhala text-theme-800 text-gold-shiny group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">දෙව්ෂාන්</h3>
                     </div>
@@ -837,7 +837,8 @@ export default function WeddingInvitationSinhala() {
                     <div className="flex flex-col items-center flex-1">
                       <Clock className="w-6 h-6 md:w-8 md:h-8 text-amber-500 mb-4 opacity-80" />
                       <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">වේලාව</p>
-                      <p className="font-sinhala text-xl md:text-3xl text-theme-900 text-gold-shiny tracking-widest font-bold whitespace-nowrap">පස්වරු 3:30</p>
+                      <p className="font-sinhala text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">පෙරවරු 11:00</p>
+                      <p className="font-sinhala text-xs md:text-sm text-amber-600 tracking-[0.2em] mt-3 uppercase">සිට පස්වරු 04:00 දක්වා</p>
                     </div>
                   </div>
 
@@ -933,7 +934,7 @@ export default function WeddingInvitationSinhala() {
                           <MapPin className="w-4 h-4 text-amber-500" />
                         </div>
                         <p className="text-lg md:text-xl text-stone-700 font-sinhala font-medium leading-relaxed tracking-wide">
-                          Ratnapura,<br /> Sri Lanka.
+                          Kandy,<br /> Sri Lanka.
                         </p>
                       </div>
 

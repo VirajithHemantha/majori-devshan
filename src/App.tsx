@@ -489,7 +489,7 @@ export default function WeddingInvitation() {
   useEffect(() => {
     if (isOpened) {
       if (!audioRef.current) {
-        audioRef.current = new Audio("/bg_music.mp3");
+        audioRef.current = new Audio("/Christina Perri - A Thousand Years (PianoCello Cover).mp3");
         audioRef.current.loop = true;
       }
       audioRef.current.play().then(() => {
@@ -513,7 +513,7 @@ export default function WeddingInvitation() {
 
   const togglePlay = () => {
     if (!audioRef.current) {
-      audioRef.current = new Audio("/bg_music.mp3");
+      audioRef.current = new Audio("/Christina Perri - A Thousand Years (PianoCello Cover).mp3");
       audioRef.current.loop = true;
     }
     if (isPlaying) {
@@ -698,7 +698,7 @@ export default function WeddingInvitation() {
                     </div>
                     <div className="font-cinzel space-y-2">
                       <p className="text-lg md:text-base text-stone-700 tracking-[0.2em] md:tracking-[0.3em] font-bold">08 AUGUST 2026</p>
-                      <p className="text-[11px] md:text-[9px] text-theme-600 tracking-[0.2em] uppercase font-bold">Ratnapura, Sri Lanka</p>
+                      <p className="text-[11px] md:text-[9px] text-theme-600 tracking-[0.2em] uppercase font-bold">Kandy, Sri Lanka</p>
                     </div>
                   </motion.div>
                 </div>
@@ -763,8 +763,8 @@ export default function WeddingInvitation() {
                     <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
-                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved son of</p>
-                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">R.K. Chanika Sudarshani <br />&<br /> M.P. Ranjith Minipura</p>
+                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved daughter of</p>
+                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">Lily Ranhaluge <br />&<br /> Sudath Ranhaluge</p>
                       </div>
                       <h3 className="text-5xl md:text-7xl font-playball text-theme-800 text-gold-shiny group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Majori</h3>
                     </div>
@@ -797,8 +797,8 @@ export default function WeddingInvitation() {
                     <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
                     <div className="relative z-10 space-y-4 py-8 md:py-12">
                       <div className="space-y-2">
-                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved daughter of</p>
-                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">W.A. Thushara Dilini <br />&<br /> S.M. Jagath Thennakoon</p>
+                        <p className="text-[7px] md:text-[8px] uppercase tracking-[0.4em] font-bold text-stone-400">Beloved son of</p>
+                        <p className="text-xs md:text-sm font-cinzel text-stone-600 tracking-wide leading-relaxed">Chamika Fernando <br />&<br /> Milroy Joseph</p>
                       </div>
                       <h3 className="text-5xl md:text-7xl font-playball text-theme-800 text-gold-shiny group-hover:scale-110 transition-transform duration-700 pt-6 drop-shadow-sm">Devshan</h3>
                     </div>
@@ -837,7 +837,8 @@ export default function WeddingInvitation() {
                     <div className="flex flex-col items-center flex-1">
                       <Clock className="w-6 h-6 md:w-8 md:h-8 text-amber-500 mb-4 opacity-80" />
                       <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-400 font-bold mb-3">The Time</p>
-                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 text-gold-shiny tracking-widest font-bold whitespace-nowrap">03:30 PM</p>
+                      <p className="font-cinzel text-xl md:text-3xl text-theme-900 tracking-widest font-bold whitespace-nowrap">11:00 AM</p>
+                      <p className="font-cinzel text-xs md:text-sm text-amber-600 tracking-[0.2em] mt-3 uppercase">To 04:00 PM</p>
                     </div>
                   </div>
 
@@ -933,7 +934,7 @@ export default function WeddingInvitation() {
                           <MapPin className="w-4 h-4 text-amber-500" />
                         </div>
                         <p className="text-lg md:text-xl text-stone-700 font-cinzel font-medium leading-relaxed tracking-wide">
-                          Ratnapura,<br /> Sri Lanka.
+                          Kandy,<br /> Sri Lanka.
                         </p>
                       </div>
 

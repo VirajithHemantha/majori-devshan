@@ -254,14 +254,12 @@ body {
 }
 
 .text-gold-shiny {
-  background: linear-gradient(
-    to right,
-    #bf953f 0%,
-    #e0c086 25%,
-    #fdf0c3 50%,
-    #e0c086 75%,
-    #bf953f 100%
-  );
+  background: linear-gradient(to right,
+      #bf953f 0%,
+      #e0c086 25%,
+      #fdf0c3 50%,
+      #e0c086 75%,
+      #bf953f 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
