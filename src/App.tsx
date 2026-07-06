@@ -257,10 +257,10 @@ function WelcomeSection() {
       <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
       <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Welcome to Our Wedding</h2>
+          <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Welcome to Our Forever</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            Love knows no distance or borders. What began miles apart has led us to this beautiful day. Thank you for celebrating the beginning of our forever. Your love and blessings mean the world to us.
+            Since 2022, our journey has been filled with love, laughter, and unforgettable memories. What began as two hearts finding each other has led us to this beautiful day. As we begin our forever together, we are grateful to celebrate this special moment surrounded by the people we love most. Thank you for being part of our story and for blessing us with your love and presence.
           </p>
         </motion.div>
       </div>
@@ -276,8 +276,11 @@ function OurStorySection() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Our Story</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
+            Our story began in 2022, when two hearts found each other in the most unexpected way. What started with simple conversations soon became a journey filled with love, trust, endless laughter, and unforgettable memories.
+          </p>
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            From Canada to the United States, distance brought us closer rather than apart. Two years of love, trust, and unforgettable memories led us here. Today, we begin our forever together.
+            Every challenge brought us closer, every moment strengthened our bond, and every step led us to this beautiful day. Today, we begin the greatest chapter of our lives—together.
           </p>
         </motion.div>
       </div>
@@ -293,8 +296,11 @@ function ProposalSection() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">The Proposal</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
+            On December 24, 2024, beneath the twinkling lights of Central Park, one unforgettable question changed our lives forever.
+          </p>
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            On December 24, 2024, beneath the lights of Central Park, New York City, Devshan asked Majori to spend forever with him. She said “Yes,” and our next chapter began. We can’t wait to celebrate with you on August 8, 2026.
+            With a heartfelt “Yes,” a new chapter began. Now, we can’t wait to celebrate the beginning of forever with the people we love most.
           </p>
         </motion.div>
       </div>
@@ -315,7 +321,7 @@ function EventTimeline() {
       <div className="container mx-auto px-6 max-w-4xl relative z-10">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">Event Timeline</h2>
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold">The flow of our special day</p>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold">The flow of Our Wedding Day</p>
         </motion.div>
 
         <div className="relative max-w-xl mx-auto">
@@ -369,7 +375,10 @@ function RSVPForm() {
       <div className="container mx-auto px-6 max-w-2xl relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">RSVP</h2>
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-10">Kindly Respond</p>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-2">Celebrate With Us</p>
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto mb-10">
+            We would be honored to celebrate this special day with you. Kindly let us know if you’ll be joining us
+          </p>
           
           {status === "success" ? (
             <div className="bg-theme-50 p-8 rounded-3xl border border-theme-200">
@@ -434,7 +443,10 @@ function WishesForm() {
       <div className="container mx-auto px-6 max-w-2xl relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">Guest Book</h2>
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-10">Leave a wish for the couple</p>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-2">Leave a Message for Us</p>
+          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto mb-10">
+            Your kind words, blessings, and memories will become keepsakes we’ll treasure for a lifetime.
+          </p>
           
           {status === "success" ? (
             <div className="bg-theme-50 p-8 rounded-3xl border border-theme-200">
@@ -939,7 +951,7 @@ export default function WeddingInvitation() {
                       </div>
 
                       <div className="pl-8 space-y-4 pt-4 text-stone-500 text-sm md:text-base tracking-wide font-light leading-relaxed">
-                        We look forward to welcoming you to this beautiful sanctuary to celebrate our special day amidst nature's elegance.
+                        We are honored to celebrate one of the most meaningful days of our lives in this beautiful place. Your presence will make this celebration even more unforgettable.
                       </div>
                     </div>
 
@@ -1017,13 +1029,18 @@ export default function WeddingInvitation() {
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-playball text-[22vw] md:text-[220px] text-theme-100/40 whitespace-nowrap pointer-events-none z-0 select-none">
                         Thank You
                       </div>
-                      <p className="text-[9px] md:text-[11px] uppercase tracking-[0.8em] text-amber-600 font-bold relative z-10 bg-[#f0eceb] px-6 py-2 rounded-full border border-amber-200/50 shadow-sm">With Love</p>
-                      <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">Majori & Devshan</h3>
-                      
-                      <p className="text-[9px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-500 font-bold relative z-10 mt-8 leading-loose max-w-lg mx-auto">
-                        Ceremony • Celebration • Dinner • Memories<br/>
-                        <span className="text-theme-700 mt-4 block tracking-[0.15em]">WE CAN'T WAIT TO CELEBRATE THIS SPECIAL DAY WITH YOU!</span>
-                      </p>
+                      <div className="relative z-10 mt-8 max-w-2xl mx-auto text-center space-y-6 px-4">
+                        <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose">
+                          Thank you for being part of our story.
+                        </p>
+                        <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose">
+                          Your love, prayers, and presence are the greatest gifts we could ever receive. We look forward to celebrating this unforgettable day with you and creating memories that will last a lifetime.
+                        </p>
+                        <div className="pt-6 flex flex-col items-center">
+                          <p className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-amber-600 font-bold mb-4 bg-white/50 px-6 py-2 rounded-full border border-amber-200/30">With all our love,</p>
+                          <h3 className="font-playball text-[3.2rem] sm:text-6xl md:text-8xl text-theme-900 drop-shadow-sm leading-none">Majori & Devshan</h3>
+                        </div>
+                      </div>
 
                       <motion.div
                         initial={{ opacity: 0, y: 30 }}

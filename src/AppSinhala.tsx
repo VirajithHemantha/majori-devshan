@@ -257,10 +257,10 @@ function WelcomeSection() {
       <div className="absolute inset-0 opacity-[0.02] paper-grain pointer-events-none" />
       <div className="container mx-auto px-6 max-w-4xl relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">අපගේ විවාහ මංගල්‍යයට සාදරයෙන් පිළිගනිමු</h2>
+          <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">අපගේ සදාකාලික බැඳීමට සාදරයෙන් පිළිගනිමු</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            ආදරයට දුරක් හෝ සීමාවන් නොමැත. සැතපුම් ගණනක් දුරින් ආරම්භ වූ අපගේ ආදරය අද මෙම සුන්දර දිනය දක්වා අපව රැගෙනවිත් තිබේ. අපගේ නව දිවියේ ආරම්භය සැමරීමට එක්වීම ගැන ඔබට ස්තූතියි. ඔබගේ ආදරය සහ ආශිර්වාදය අපට ඉතා අගනේය.
+            2022 වසරේ සිට, අපගේ ගමන ආදරය, සිනහව සහ අමතක නොවන මතකයන්ගෙන් පිරී ඇත. හදවත් දෙකක් එකිනෙකා සොයා ගැනීමෙන් ආරම්භ වූ දෙය, අද මෙම සුන්දර දිනය දක්වා අපව රැගෙනවිත් තිබේ. අපගේ නව දිවියේ ආරම්භය, අපගේ ආදරණීයයන් සමඟ සැමරීමට ලැබීම අපට මහත් සතුටකි. අපගේ කතාවේ කොටසක් වීම ගැන සහ ඔබගේ ආදරය හා ආශිර්වාදය ලබාදීම ගැන ඔබට ස්තූතියි.
           </p>
         </motion.div>
       </div>
@@ -276,8 +276,11 @@ function OurStorySection() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">අපගේ කතාව</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
+            අපගේ කතාව ආරම්භ වූයේ 2022 වසරේදීය, හදවත් දෙකක් වඩාත් අනපේක්ෂිත ලෙස එකිනෙකා සොයාගත් විටය. සරල කතාබහකින් ආරම්භ වූ දෙය ඉක්මනින්ම ආදරය, විශ්වාසය, නිමක් නැති සිනහව සහ අමතක නොවන මතකයන්ගෙන් පිරුණු ගමනක් බවට පත්විය.
+          </p>
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            කැනඩාවේ සිට ඇමරිකා එක්සත් ජනපදයට, දුරස්වීම අපව තවත් සමීප කළේය. වසර දෙකක ආදරය, විශ්වාසය සහ අමතක නොවන මතකයන් අපව මෙහි ගෙන ආවේය. අද, අපි අපගේ සදාකාලික ගමන එකට අරඹමු.
+            සෑම අභියෝගයක්ම අපව තවත් සමීප කළේය, සෑම මොහොතක්ම අපගේ බැඳීම ශක්තිමත් කළේය, සෑම පියවරක්ම අද මෙම සුන්දර දිනය දක්වා අපව ගෙන ආවේය. අද, අපි අපගේ ජීවිතයේ ශ්‍රේෂ්ඨතම පරිච්ඡේදය—එකට අරඹමු.
           </p>
         </motion.div>
       </div>
@@ -293,8 +296,11 @@ function ProposalSection() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">ආදර ඇරයුම</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
+          <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
+            2024 දෙසැම්බර් 24 වන දින, සෙන්ට්‍රල් පාර්ක් හි දිදුලන විදුලි පහන් එළිය යට, එක් අමතක නොවන ප්‍රශ්නයක් අපගේ ජීවිතය සදහටම වෙනස් කළේය.
+          </p>
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            2024 දෙසැම්බර් 24 වන දින, නිව් යෝර්ක් නුවර සෙන්ට්‍රල් පාර්ක් හි විදුලි පහන් එළිය යට, තම ජීවිතයේ ඉතිරි කාලය එකට ගත කිරීමට දෙව්ශාන් මජෝරිට ආරාධනා කළේය. ඇය "ඔව්" යැයි පැවසූ අතර, අපගේ මීළඟ පරිච්ඡේදය ආරම්භ විය. 2026 අගෝස්තු 8 වන දින ඔබ සමඟ මෙය සැමරීමට අපි නොඉවසිල්ලෙන් බලා සිටිමු.
+            හදවතින්ම පැවසූ "ඔව්" යන්නත් සමඟ නව පරිච්ඡේදයක් ආරම්භ විය. දැන්, අපගේ සදාකාලික ගමනේ ආරම්භය අප ආදරය කරන අය සමඟ සැමරීමට අපි නොඉවසිල්ලෙන් බලා සිටිමු.
           </p>
         </motion.div>
       </div>
@@ -315,7 +321,7 @@ function EventTimeline() {
       <div className="container mx-auto px-6 max-w-4xl relative z-10">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">උත්සව මාලාව</h2>
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold">මෙම විශේෂ දිනයේ කාලසටහන</p>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold">අපගේ මංගල දිනයේ කාලසටහන</p>
         </motion.div>
 
         <div className="relative max-w-xl mx-auto">
@@ -369,7 +375,10 @@ function RSVPForm() {
       <div className="container mx-auto px-6 max-w-2xl relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">පැමිණීම තහවුරු කිරීම</h2>
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-10">කරුණාකර අප හා එක්වන්න</p>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-2">අප සමඟ එක්වන්න</p>
+          <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto mb-10">
+            මෙම විශේෂ දිනය ඔබ සමඟ සැමරීමට ලැබීම අපට මහත් ගෞරවයකි. කරුණාකර ඔබ අප හා එක්වන්නේදැයි අපට දන්වන්න.
+          </p>
           
           {status === "success" ? (
             <div className="bg-theme-50 p-8 rounded-3xl border border-theme-200">
@@ -434,7 +443,10 @@ function WishesForm() {
       <div className="container mx-auto px-6 max-w-2xl relative z-10 text-center">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-4 drop-shadow-sm">අමුත්තන්ගේ සටහන්</h2>
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-10">ඔබගේ සුබ පැතුම එක් කරන්න</p>
+          <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-stone-500 font-bold mb-2">අපට පණිවිඩයක් තබන්න</p>
+          <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto mb-10">
+            ඔබගේ ආදරණීය වදන්, ආශිර්වාද සහ මතකයන් අපගේ ජීවිත කාලය පුරාවටම සුරැකිය යුතු වටිනා සිහිවටන බවට පත්වනු ඇත.
+          </p>
           
           {status === "success" ? (
             <div className="bg-theme-50 p-8 rounded-3xl border border-theme-200">
@@ -939,7 +951,7 @@ export default function WeddingInvitationSinhala() {
                       </div>
 
                       <div className="pl-8 space-y-4 pt-4 text-stone-500 text-sm md:text-base tracking-wide font-light leading-relaxed">
-                        ස්වභාවධර්මයේ සුන්දරත්වය මැද අපගේ මෙම සුවිශේෂී දිනය සැමරීමට ඔබව සාදරයෙන් පිළිගැනීමට අපි බලාපොරොත්තු වෙමු.
+                        අපගේ ජීවිතයේ වඩාත්ම අර්ථවත් දිනයක් මෙම සුන්දර ස්ථානයේ සැමරීමට ලැබීම අපට මහත් ගෞරවයකි. ඔබගේ පැමිණීම මෙම සැමරුම තවත් අමතක නොවන එකක් බවට පත් කරනු ඇත.
                       </div>
                     </div>
 
@@ -1017,13 +1029,18 @@ export default function WeddingInvitationSinhala() {
                       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sinhala text-[15vw] md:text-[150px] text-theme-100/40 whitespace-nowrap pointer-events-none z-0 select-none">
                         ස්තූතියි
                       </div>
-                      <p className="text-[9px] md:text-[11px] uppercase tracking-[0.8em] text-amber-600 font-bold relative z-10 bg-[#f0eceb] px-6 py-2 rounded-full border border-amber-200/50 shadow-sm">ආදරයෙන්</p>
-                      <h3 className="font-sinhala text-[2.2rem] sm:text-5xl md:text-7xl text-theme-900 relative z-10 drop-shadow-sm px-4 pt-4 leading-none">මජෝරි සහ දෙව්ෂාන්</h3>
-                      
-                      <p className="text-[9px] md:text-[11px] uppercase tracking-[0.3em] md:tracking-[0.4em] text-stone-500 font-bold relative z-10 mt-8 leading-loose max-w-lg mx-auto">
-                        උත්සවය • සැමරුම • රාත්‍රී භෝජනය • මතකයන්<br/>
-                        <span className="text-theme-700 mt-4 block tracking-[0.15em]">මෙම සුවිශේෂී දිනය ඔබ සමඟ සැමරීමට අපි බලා සිටිමු!</span>
-                      </p>
+                      <div className="relative z-10 mt-8 max-w-2xl mx-auto text-center space-y-6 px-4">
+                        <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose">
+                          අපගේ කතාවේ කොටසක් වීම ගැන ඔබට ස්තූතියි.
+                        </p>
+                        <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose">
+                          ඔබගේ ආදරය, ආශිර්වාදය සහ පැමිණීම අපට ලැබිය හැකි ඉහළම තෑගි වේ. මෙම අමතක නොවන දිනය ඔබ සමඟ සැමරීමට සහ ජීවිත කාලය පුරාවටම පවතින මතකයන් නිර්මාණය කිරීමට අපි බලාපොරොත්තු වෙමු.
+                        </p>
+                        <div className="pt-6 flex flex-col items-center">
+                          <p className="text-[10px] md:text-xs uppercase tracking-[0.4em] text-amber-600 font-bold mb-4 bg-white/50 px-6 py-2 rounded-full border border-amber-200/30">අපගේ හදපිරි ආදරයෙන්,</p>
+                          <h3 className="font-sinhala text-[2.2rem] sm:text-5xl md:text-7xl text-theme-900 drop-shadow-sm leading-none">මජෝරි සහ දෙව්ෂාන්</h3>
+                        </div>
+                      </div>
 
                       <motion.div
                         initial={{ opacity: 0, y: 30 }}
