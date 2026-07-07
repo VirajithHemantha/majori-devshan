@@ -260,7 +260,7 @@ function WelcomeSection() {
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">අපගේ සදාකාලික බැඳීමට සාදරයෙන් පිළිගනිමු</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            2022 වසරේ සිට, අපගේ ගමන ආදරය, සිනහව සහ අමතක නොවන මතකයන්ගෙන් පිරී ඇත. හදවත් දෙකක් එකිනෙකා සොයා ගැනීමෙන් ආරම්භ වූ දෙය, අද මෙම සුන්දර දිනය දක්වා අපව රැගෙනවිත් තිබේ. අපගේ නව දිවියේ ආරම්භය, අපගේ ආදරණීයයන් සමඟ සැමරීමට ලැබීම අපට මහත් සතුටකි. අපගේ කතාවේ කොටසක් වීම ගැන සහ ඔබගේ ආදරය හා ආශිර්වාදය ලබාදීම ගැන ඔබට ස්තූතියි.
+            අපගේ හදවත් එකිනෙකා හඳුනාගත් මොහොතේ සිට, සෑම දිනයක්ම සුන්දර ගමනක් වී ඇත. අද අපි අපගේ සදාකාලික ජීවිතය ආරම්භ කරන අතර, එය ඔබ සමඟ සැමරීමට ලැබීම ගැන අපි කෘතඥ වෙමු.
           </p>
         </motion.div>
       </div>
@@ -277,10 +277,7 @@ function OurStorySection() {
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">අපගේ කතාව</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
-            අපගේ කතාව ආරම්භ වූයේ 2022 වසරේදීය, හදවත් දෙකක් වඩාත් අනපේක්ෂිත ලෙස එකිනෙකා සොයාගත් විටය. සරල කතාබහකින් ආරම්භ වූ දෙය ඉක්මනින්ම ආදරය, විශ්වාසය, නිමක් නැති සිනහව සහ අමතක නොවන මතකයන්ගෙන් පිරුණු ගමනක් බවට පත්විය.
-          </p>
-          <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            සෑම අභියෝගයක්ම අපව තවත් සමීප කළේය, සෑම මොහොතක්ම අපගේ බැඳීම ශක්තිමත් කළේය, සෑම පියවරක්ම අද මෙම සුන්දර දිනය දක්වා අපව ගෙන ආවේය. අද, අපි අපගේ ජීවිතයේ ශ්‍රේෂ්ඨතම පරිච්ඡේදය—එකට අරඹමු.
+            2022 වසරේ සිට, සෑම සිනහවක්, සෑම මතකයක් සහ අප එකට ගත කළ සෑම මොහොතක් හරහාම අපගේ ආදරය වර්ධනය වී ඇත. අද, අපි අපගේ සදාකාලික ජීවිතය ආරම්භ කරමු.
           </p>
         </motion.div>
       </div>
