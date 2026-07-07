@@ -260,7 +260,7 @@ function WelcomeSection() {
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Welcome to Our Forever</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            Since 2022, our journey has been filled with love, laughter, and unforgettable memories. What began as two hearts finding each other has led us to this beautiful day. As we begin our forever together, we are grateful to celebrate this special moment surrounded by the people we love most. Thank you for being part of our story and for blessing us with your love and presence.
+            From the moment our hearts found each other, every day has been a beautiful journey. Today, we begin our forever, and we’re grateful to celebrate it with you.
           </p>
         </motion.div>
       </div>
@@ -277,10 +277,7 @@ function OurStorySection() {
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">Our Story</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
-            Our story began in 2022, when two hearts found each other in the most unexpected way. What started with simple conversations soon became a journey filled with love, trust, endless laughter, and unforgettable memories.
-          </p>
-          <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
-            Every challenge brought us closer, every moment strengthened our bond, and every step led us to this beautiful day. Today, we begin the greatest chapter of our lives—together.
+            Since 2022, our love has grown through every laugh, every memory, and every moment together. Today, we begin our forever.
           </p>
         </motion.div>
       </div>
