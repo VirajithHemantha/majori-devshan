@@ -190,7 +190,7 @@ function CountdownTimer() {
   );
 }
 
-function WeddingEnvelope({ onOpen }: { onOpen: () => void }) {
+function WeddingEnvelope({ onOpen, guestFullName }: { onOpen: () => void, guestFullName?: string | null }) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -204,7 +204,14 @@ function WeddingEnvelope({ onOpen }: { onOpen: () => void }) {
     >
       {/* Title Section */}
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="text-center mb-10">
-        <span className="inline-block px-5 py-2 rounded-full bg-amber-50 border border-amber-200 text-[10px] uppercase tracking-[0.5em] text-amber-600 font-bold mb-6">
+        {guestFullName && (
+          <div className="mb-6">
+            <p className="text-theme-500 text-[9px] md:text-xs tracking-[0.4em] uppercase font-bold mb-2">විශේෂ ආරාධිත</p>
+            <h2 className="font-sinhala text-2xl md:text-4xl text-amber-600 drop-shadow-sm px-4">ආදරණීය {guestFullName}</h2>
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mt-4"></div>
+          </div>
+        )}
+        <span className="inline-block px-5 py-2 rounded-full bg-amber-50 border border-amber-200 text-[10px] uppercase tracking-[0.5em] text-amber-600 font-bold mb-6 mt-2">
           Save the Date
         </span>
         <h1 className="font-sinhala text-4xl md:text-5xl text-theme-800 text-gold-shiny mb-4 tracking-tight">
@@ -495,6 +502,12 @@ export default function WeddingInvitationSinhala() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
 
+  const urlParams = new URLSearchParams(window.location.search);
+  const prefixParam = urlParams.get('prefix');
+  const nameParam = urlParams.get('guestName');
+  const inviteTypeParam = urlParams.get('inviteType') || 'ඔබ සැමට';
+  const guestFullName = nameParam ? `${prefixParam ? prefixParam + ' ' : ''}${nameParam}` : null;
+
   useEffect(() => {
     if (isOpened) {
       if (!audioRef.current) {
@@ -579,7 +592,7 @@ export default function WeddingInvitationSinhala() {
 
       <AnimatePresence mode="wait">
         {!isOpened ? (
-          <WeddingEnvelope onOpen={() => setIsOpened(true)} />
+          <WeddingEnvelope onOpen={() => setIsOpened(true)} guestFullName={guestFullName} />
         ) : (
           <motion.div
             key="website-stage"
@@ -753,7 +766,16 @@ export default function WeddingInvitationSinhala() {
                 >
                   <div className="w-px h-16 md:h-24 bg-gradient-to-b from-transparent to-theme-400 mb-6 md:mb-10" />
                   <p className="text-theme-700 text-[9px] md:text-[12px] tracking-[0.4em] md:tracking-[0.6em] uppercase font-bold text-center leading-loose">
-                    අපගේ විවාහ මංගල්‍යයට<br className="hidden md:block" /> සහභාගී වන ලෙස අපි ඔබ සැමට ආදරයෙන් ආරාධනා කරන්නෙමු
+                    {guestFullName ? (
+                      <>
+                        <span className="normal-case text-lg md:text-2xl font-bold font-sinhala text-amber-600 tracking-wide mb-3 block drop-shadow-sm">ආදරණීය {guestFullName},</span>
+                        අපගේ විවාහ මංගල්‍යයට<br className="hidden md:block" /> සහභාගී වන ලෙස අපි {inviteTypeParam} ආදරයෙන් ආරාධනා කරන්නෙමු
+                      </>
+                    ) : (
+                      <>
+                        අපගේ විවාහ මංගල්‍යයට<br className="hidden md:block" /> සහභාගී වන ලෙස අපි {inviteTypeParam} ආදරයෙන් ආරාධනා කරන්නෙමු
+                      </>
+                    )}
                   </p>
                 </motion.div>
 
