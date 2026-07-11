@@ -301,7 +301,7 @@ function ProposalSection() {
           <h2 className="font-playball text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">The Proposal</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
-            On December 24, 2024, beneath the twinkling lights of Central Park, one unforgettable question changed our lives forever.
+            On December 23, 2024, beneath the twinkling lights of Central Park, one unforgettable question changed our lives forever.
           </p>
           <p className="text-stone-600 font-montserrat text-sm md:text-base leading-loose max-w-2xl mx-auto">
             With a heartfelt “Yes,” a new chapter began. Now, we can’t wait to celebrate the beginning of forever with the people we love most.
@@ -872,13 +872,22 @@ export default function WeddingInvitation() {
                     </div>
                   </div>
 
-                  <div className="pt-8 w-full px-4">
+                  <div className="pt-8 w-full px-4 flex flex-col items-center gap-8">
                     <div className="relative inline-flex items-center justify-center w-full max-w-md mx-auto group">
                       <div className="absolute inset-0 bg-theme-100 blur-lg opacity-40 group-hover:opacity-60 transition-opacity" />
                       <p className="relative text-theme-800 bg-white shadow-[0_4px_20px_-5px_rgba(0,0,0,0.05)] text-[9px] md:text-[11px] font-bold tracking-[0.3em] md:tracking-[0.4em] uppercase px-6 lg:px-10 py-4 lg:py-5 rounded-full border border-amber-200 flex items-center justify-center gap-4 w-full md:w-auto">
                         <span className="w-1.5 h-1.5 rotate-45 bg-amber-500 shrink-0" />
-                        <span className="whitespace-nowrap">Christian Marriage Ceremony</span>
+                        <span className="whitespace-nowrap">Blessing ceremony</span>
                         <span className="w-1.5 h-1.5 rotate-45 bg-theme-500 shrink-0" />
+                      </p>
+                    </div>
+
+                    <div className="text-center px-4 max-w-2xl mx-auto">
+                      <p className="font-playball text-2xl md:text-3xl text-theme-800 mb-3 opacity-90 leading-relaxed">
+                        "Therefore what God has joined together, let no one separate."
+                      </p>
+                      <p className="text-[10px] md:text-xs uppercase tracking-[0.3em] text-amber-600 font-bold">
+                        Mark 10:9
                       </p>
                     </div>
                   </div>

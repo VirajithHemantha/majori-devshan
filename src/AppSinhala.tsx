@@ -301,7 +301,7 @@ function ProposalSection() {
           <h2 className="font-sinhala text-4xl md:text-5xl text-theme-900 mb-6 drop-shadow-sm">ආදර ඇරයුම</h2>
           <div className="w-16 h-px bg-amber-400 mx-auto mb-8" />
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto mb-4">
-            2024 දෙසැම්බර් 24 වන දින, සෙන්ට්‍රල් පාර්ක් හි දිදුලන විදුලි පහන් එළිය යට, එක් අමතක නොවන ප්‍රශ්නයක් අපගේ ජීවිතය සදහටම වෙනස් කළේය.
+            2024 දෙසැම්බර් 23 වන දින, සෙන්ට්‍රල් පාර්ක් හි දිදුලන විදුලි පහන් එළිය යට, එක් අමතක නොවන ප්‍රශ්නයක් අපගේ ජීවිතය සදහටම වෙනස් කළේය.
           </p>
           <p className="text-stone-600 font-sinhala text-sm md:text-base leading-loose max-w-2xl mx-auto">
             හදවතින්ම පැවසූ "ඔව්" යන්නත් සමඟ නව පරිච්ඡේදයක් ආරම්භ විය. දැන්, අපගේ සදාකාලික ගමනේ ආරම්භය අප ආදරය කරන අය සමඟ සැමරීමට අපි නොඉවසිල්ලෙන් බලා සිටිමු.
