@@ -366,11 +366,31 @@ function RSVPForm() {
   const [name, setName] = useState("");
   const [attending, setAttending] = useState<"yes" | "no" | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxmTXekcZrC2PkWJoC9VtczmQPZm7wvpxy7-c5UVx8dcvUtlpcHxil9tcx5GTa7kkA7tQ/exec";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !attending) return;
     setStatus("submitting");
-    setTimeout(() => setStatus("success"), 1000);
+    
+    try {
+      const formData = new FormData();
+      formData.append('type', 'rsvp');
+      formData.append('name', name);
+      formData.append('attending', attending === 'yes' ? 'Accept' : 'Decline');
+      formData.append('language', 'English');
+      
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      });
+      
+      setStatus("success");
+    } catch (error) {
+      console.error("Submission failed:", error);
+      setStatus("idle");
+    }
   };
 
   return (
@@ -434,11 +454,31 @@ function WishesForm() {
   const [name, setName] = useState("");
   const [wish, setWish] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxmTXekcZrC2PkWJoC9VtczmQPZm7wvpxy7-c5UVx8dcvUtlpcHxil9tcx5GTa7kkA7tQ/exec";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!name.trim() || !wish.trim()) return;
     setStatus("submitting");
-    setTimeout(() => setStatus("success"), 1000);
+    
+    try {
+      const formData = new FormData();
+      formData.append('type', 'wish');
+      formData.append('name', name);
+      formData.append('wish', wish);
+      formData.append('language', 'English');
+      
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        body: formData,
+        mode: 'no-cors'
+      });
+      
+      setStatus("success");
+    } catch (error) {
+      console.error("Submission failed:", error);
+      setStatus("idle");
+    }
   };
 
   return (
@@ -984,7 +1024,7 @@ export default function WeddingInvitation() {
 
                     <div className="pt-8 w-full md:w-auto">
                       <button
-                        onClick={() => window.open('https://maps.app.goo.gl/1jamDdhCgKfxaLRz5', '_blank')}
+                        onClick={() => window.open('https://maps.app.goo.gl/78LdRdzSU6P1euG78', '_blank')}
                         className="w-full md:w-auto flex items-center justify-center gap-4 bg-gradient-to-r from-[#c49a45] to-[#e0c086] text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[10px] md:text-xs hover:from-[#e0c086] hover:to-[#c49a45] hover:shadow-xl hover:shadow-[#e0c086]/30 transition-all duration-300 group"
                       >
                         <MapPin className="w-4 h-4 group-hover:-translate-y-1 transition-transform duration-300" />
