@@ -1015,7 +1015,7 @@ export default function WeddingInvitationSinhala() {
 
                     <div className="pt-8 w-full md:w-auto">
                       <button
-                        onClick={() => window.open('https://maps.app.goo.gl/78LdRdzSU6P1euG78', '_blank')}
+                        onClick={() => window.open('https://maps.app.goo.gl/q5nBxPx94MTV2Tnb7?g_st=iw', '_blank')}
                         className="w-full md:w-auto flex items-center justify-center gap-4 bg-gradient-to-r from-[#c49a45] to-[#e0c086] text-white px-10 py-5 rounded-full font-bold uppercase tracking-[0.2em] text-[12px] md:text-[14px] hover:from-[#e0c086] hover:to-[#c49a45] hover:shadow-xl hover:shadow-[#e0c086]/30 transition-all duration-300 group"
                       >
                         <MapPin className="w-4 h-4 group-hover:-translate-y-1 transition-transform duration-300" />
@@ -1029,14 +1029,18 @@ export default function WeddingInvitationSinhala() {
                     initial={{ opacity: 0, scale: 0.95 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="relative w-full max-w-[450px] mx-auto aspect-[4/5] md:aspect-[3/4] rounded-t-full rounded-b-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border-[12px] border-white bg-theme-100 overflow-hidden group"
+                    onClick={() => window.open('https://maps.app.goo.gl/q5nBxPx94MTV2Tnb7?g_st=iw', '_blank')}
+                    className="relative w-full max-w-[450px] mx-auto aspect-[4/5] md:aspect-[3/4] rounded-t-full rounded-b-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border-[12px] border-white bg-theme-100 overflow-hidden group cursor-pointer"
                   >
                     <div className="absolute inset-0 border border-amber-200 rounded-t-full rounded-b-[1.5rem] pointer-events-none z-10" />
+                    
+                    {/* Overlay to capture clicks */}
+                    <div className="absolute inset-0 z-20" />
 
                     {/* The Maps iframe */}
                     <div className="absolute inset-0 w-full h-full scale-[1.2] group-hover:scale-[1.15] transition-transform duration-[2s]">
                       <iframe
-                        src="https://maps.google.com/maps?q=Earls%20Regency%20නුවර,%20Sri%20Lanka&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=Earl's%20Regency%20Hotel,%20Kundasale%2020168&t=&z=14&ie=UTF8&iwloc=&output=embed"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}
